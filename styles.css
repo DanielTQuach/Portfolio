@@ -238,3 +238,30 @@
     color: #9ca3af;
 }
 
+/* timeline */
+
+.timeline {
+  list-style: none;
+  border-left: 1px solid rgba(148, 163, 184, 0.4);
+  padding-left: 1.5rem;
+}
+.timeline__item {
+  position: relative;
+  padding-left: 0.75rem;
+  margin-bottom: 1.7rem;
+}
+.timeline__dot {
+  position: absolute;
+  left: -0.6rem;
+  top: 0.3rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 999px;
+  background: linear-gradient(120deg, #38bdf8, #a855f7);
+  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.15);
+}
+.timeline__meta {
+  color: #9ca3af;
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+}
