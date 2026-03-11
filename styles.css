@@ -181,3 +181,34 @@
     max-width: 32rem;
     margin-bottom: 2rem;
 }
+
+/* more additions to about section CSS */
+.about {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1.2fr);
+    gap: 2rem;
+}
+
+.about__main p + p {
+    margin-top: 0.9rem;
+}
+
+.about__highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.about__pill {
+    padding: 0.4rem 0.8rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    border: 1px solid rgba(148, 163, 184, 0.5);
+    background: rgba(15, 23, 42, 0.7);
+}
+
+@media (max-width: 800px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+}
