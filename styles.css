@@ -153,3 +153,31 @@
     justify-content: flex-start;
   }
 }
+
+/* for skills & about sections */
+.section {
+    padding: 4rem 5vw;
+}
+
+.section--alt {
+    background: radial-gradient(circle at top left, rgba(30, 64, 175, 0.35), transparent 55%),
+                #020617;
+}
+
+.section__inner {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.section__title {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+
+.section__subtitle {
+    color: #9ca3af;
+    font-size: 0.95rem;
+    max-width: 32rem;
+    margin-bottom: 2rem;
+}
