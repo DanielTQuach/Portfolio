@@ -212,3 +212,29 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* for skills grid cards */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.skills-card {
+    border-radius: 1rem;
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.25), transparent),
+              rgba(15, 23, 42, 0.9);
+    padding: 1.25rem 1.4rem;
+}
+
+.skills-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.35rem;
+}
+
+.skills-card p {
+    font-size: 0.9rem;
+    color: #9ca3af;
+}
+
