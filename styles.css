@@ -303,3 +303,19 @@
   color: #38bdf8;
   text-decoration: none;
 }
+
+/* for contact section */
+.contact {
+  max-width: 480px;
+}
+
+.contact h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact p {
+  font-size: 0.95rem;
+  color: #9ca3af;
+  margin-bottom: 1.2rem;
+}
