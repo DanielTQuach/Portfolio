@@ -28,118 +28,114 @@
         </a>
     </nav>
     
-    <section id="hero" class="hero">
-        <div class="hero__content">
-            <p class="hero__eyebrow">Software Engineer</p>
-            <h1 class="hero__title">
-                Hi I'm <span>Daniel</span>
-            </h1>
-            <p class="hero__subtitle">
-                I build scalable, user-centric web applications with clean architecture and delightful UX.
-            </p>
-            <div class="hero__actions">
-                <a href="#projects" class="btn btn--primary">View Projects</a>
-                <a href="#contact" class="btn btn--ghost">Contact Me</a>
-            </div>
-        </div>
-
-        <div class="hero__visual">
-            <div class="hero__card">
-                <p>Currently exploring</p>
-                <strong>Modern UI systems & performance</strong>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="section section--alt">
-        <div class="section__inner">
-            <h2 class="section__title"About></h2>
-            <p class="section__subtitle">
-                I'm a software engineer focused on building maintainable systems and polished interfaces.
-            </p>
-            <div class="about">
-                <div class="about__main">  
-                    <p>
-                        I enjoy taking complex problems and turning them into simple, elegant interfaces.
-                        I care about perfromance, accessibility, and maintainability.
-                    </p>
-                </div>
-                <div class="about__highlights">
-                    <div class="about__pill">TypeScript & React</div>
-                    <div class="about__pill">Clean architecture</div>
-                    <div class="about__pill">Testing & reliability</div>
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero__orb" aria-hidden="true"></div>
+            <div class="hero__content">
+                <p class="hero__eyebrow">Software Engineer</p>
+                <h1 class="hero__title">Daniel <span class="text-gradient">Quach</span></h1>
+                <p class="hero__subtitle">Building elegant, performant software with a passion for clean architecture and seamless user experiences.</p>
+                <div class="hero__actions">
+                    <a href="#projects" class="btn btn--primary">View Work</a>
+                    <a href="/Daniel_Quach_Resume.pdf" target="_blank" class="btn btn--outline">Resume</a>
                 </div>
             </div>
 
-        </div>
-    </section>
+            <div class="hero__scroll" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+            </div>
+        </section>
 
-    <section id="skills" class="section">
-        <div class="section__inner">
-            <h2 class="section__title">Skills</h2>
-            <p class="section__subtitle">
-                A mix of front-end, back-end, and tooling I reach for regularly.
-            </p>
-            <article class="skills-card">
-                <h3>Frontend</h3>
-                <p>React, TypeScript, HTML, CSS, Tailwind</p>
+        <section id="about" class="section section--alt">
+            <div class="section__inner">
+                <h2 class="section__title"About></h2>
+                <p class="section__subtitle">
+                    I'm a software engineer focused on building maintainable systems and polished interfaces.
+                </p>
+                <div class="about">
+                    <div class="about__main">  
+                        <p>
+                            I enjoy taking complex problems and turning them into simple, elegant interfaces.
+                            I care about perfromance, accessibility, and maintainability.
+                        </p>
+                    </div>
+                    <div class="about__highlights">
+                        <div class="about__pill">TypeScript & React</div>
+                        <div class="about__pill">Clean architecture</div>
+                        <div class="about__pill">Testing & reliability</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="section__inner">
+                <h2 class="section__title">Skills</h2>
+                <p class="section__subtitle">
+                    A mix of front-end, back-end, and tooling I reach for regularly.
+                </p>
+                <article class="skills-card">
+                    <h3>Frontend</h3>
+                    <p>React, TypeScript, HTML, CSS, Tailwind</p>
+                </article>
+                <article class="skills-card">
+                    <h3>Backend</h3>
+                    <p>Node.js, APIs, databases, authentication</p>
+                </article>
+                <article class="skills-card">
+                    <h3>Tooling</h3>
+                    <p>Git, testing, CI/CD, performance tooling</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="experience" class="section section--alt">
+            <ol class="timeline">
+                <li class="timeline__item">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <h3>Software Engineer</h3>
+                        <p class="timeline__meta">Company Name · 2023 – Present</p>
+                        <p>Working on building and maintaining modern web applications.</p>
+                    </div>
+                </li>
+                <li class="timeline__item">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <h3>Previous Role</h3>
+                        <p class="timeline__meta">Another Company · 2021 – 2023</p>
+                        <p>Short summary of what you focused on here.</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+        <section id="projects" class="section">
+            <div class="projects-grid">
+            <article class="project-card">
+                <h3>Project One</h3>
+                <p class="project-card__desc">
+                Brief description of what the project does and what you contributed.
+                </p>
+                <p class="project-card__tech">TypeScript · React · API</p>
+                <div class="project-card__links">
+                <a href="#" class="project-link">Live</a>
+                <a href="#" class="project-link">Code</a>
+                </div>
             </article>
-            <article class="skills-card">
-                <h3>Backend</h3>
-                <p>Node.js, APIs, databases, authentication</p>
-            </article>
-            <article class="skills-card">
-                <h3>Tooling</h3>
-                <p>Git, testing, CI/CD, performance tooling</p>
-            </article>
-        </div>
-    </section>
-
-    <section id="experience" class="section section--alt">
-        <ol class="timeline">
-            <li class="timeline__item">
-                <div class="timeline__dot"></div>
-                <div class="timeline__content">
-                    <h3>Software Engineer</h3>
-                    <p class="timeline__meta">Company Name · 2023 – Present</p>
-                    <p>Working on building and maintaining modern web applications.</p>
-                </div>
-            </li>
-            <li class="timeline__item">
-                <div class="timeline__dot"></div>
-                <div class="timeline__content">
-                    <h3>Previous Role</h3>
-                    <p class="timeline__meta">Another Company · 2021 – 2023</p>
-                    <p>Short summary of what you focused on here.</p>
-                </div>
-            </li>
-        </ol>
-    </section>
-    <section id="projects" class="section">
-        <div class="projects-grid">
-        <article class="project-card">
-            <h3>Project One</h3>
-            <p class="project-card__desc">
-            Brief description of what the project does and what you contributed.
-            </p>
-            <p class="project-card__tech">TypeScript · React · API</p>
-            <div class="project-card__links">
-            <a href="#" class="project-link">Live</a>
-            <a href="#" class="project-link">Code</a>
+            
             </div>
-        </article>
-        
-        </div>
-    </section>
-    <section id="contact" class="section section--alt">
-        <div class="contact">
-            <h3>Let’s build something together</h3>
-            <p>
-                Reach out if you’d like to talk about a role, a project, or just to say hi.
-            </p>
-            <a href="mailto:youremail@example.com" class="btn btn--primary">
-                Email me
-            </a>
-        </div>
-    </section>
+        </section>
+        <section id="contact" class="section section--alt">
+            <div class="contact">
+                <h3>Let’s build something together</h3>
+                <p>
+                    Reach out if you’d like to talk about a role, a project, or just to say hi.
+                </p>
+                <a href="mailto:youremail@example.com" class="btn btn--primary">
+                    Email me
+                </a>
+            </div>
+        </section> 
+    </main>
 </body>
