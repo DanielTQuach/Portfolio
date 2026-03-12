@@ -263,6 +263,50 @@ img {
   background: var(--muted);
 }
 
+/* section layout (used by all sections) */
+.section {
+  padding: var(--section-padding) var(--section-padding-x);
+}
+
+.section__inner {
+  max-width: var(--max-content);
+  margin: 0 auto;
+}
+
+.section__label {
+  font-size: 0.875rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+  margin-bottom: 0.5rem;
+}
+
+.section__title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--foreground);
+  margin-bottom: 2rem;
+}
+
+.section__inner--narrow {
+  max-width: 640px;
+}
+
+.section__inner--center {
+  text-align: center;
+}
+
+/* glass card (shared by about, experience, project cards) */
+.glass-card {
+  background: color-mix(in srgb, var(--card) 85%, transparent);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-radius: 1rem;
+  border: 1px solid color-mix(in srgb, var(--border) 50%, transparent);
+  box-shadow: var(--shadow-card);
+}
+
 /* for skills & about sections */
 .section#about .section__title {
   margin-bottom: 3rem;
