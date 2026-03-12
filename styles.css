@@ -264,62 +264,66 @@ img {
 }
 
 /* for skills & about sections */
-.section {
-    padding: 4rem 5vw;
+.section#about .section__title {
+  margin-bottom: 3rem;
 }
 
-.section--alt {
-    background: radial-gradient(circle at top left, rgba(30, 64, 175, 0.35), transparent 55%),
-                #020617;
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
 }
 
-.section__inner {
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-.section__title {
-    font-size: 1.7rem;
-    font-weight: 700;
-    margin-bottom: 0.4rem;
-}
-
-.section__subtitle {
-    color: #9ca3af;
-    font-size: 0.95rem;
-    max-width: 32rem;
-    margin-bottom: 2rem;
-}
-
-/* more additions to about section CSS */
-.about {
-    display: grid;
-    grid-template-columns: minmax(0, 2fr) minmax(0, 1.2fr);
-    gap: 2rem;
-}
-
-.about__main p + p {
-    margin-top: 0.9rem;
-}
-
-.about__highlights {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-}
-
-.about__pill {
-    padding: 0.4rem 0.8rem;
-    border-radius: 999px;
-    font-size: 0.8rem;
-    border: 1px solid rgba(148, 163, 184, 0.5);
-    background: rgba(15, 23, 42, 0.7);
-}
-
-@media (max-width: 800px) {
-  .about {
-    grid-template-columns: 1fr;
+@media (min-width: 768px) {
+  .about__grid {
+    grid-template-columns: 1.2fr 1fr;
+    gap: 5rem;
   }
+}
+
+.about__text {
+  animation: fade-up 0.7s ease-out 0.1s both;
+}
+
+.about__text p {
+  font-size: 1.125rem;
+  color: var(--muted-foreground);
+  line-height: 1.7;
+}
+
+.about__text p + p {
+  margin-top: 1.5rem;
+}
+
+.about__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  animation: fade-up 0.7s ease-out 0.3s both;
+}
+
+.about__card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.about__icon {
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+  color: var(--accent);
+}
+
+.about__card-title {
+  font-weight: 600;
+  color: var(--foreground);
+  margin-bottom: 0.25rem;
+}
+
+.about__card-meta {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
 }
 
 /* for skills grid cards */
