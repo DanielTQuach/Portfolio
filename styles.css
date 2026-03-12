@@ -130,48 +130,103 @@ img {
 
 /* for hero section */
 .hero {
-    display: grid;
-    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
-    gap: 3rem;
-    padding: 4.5rem 5vw 3rem;
-    align-items: center;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--section-padding) var(--section-padding-x);
+  overflow: hidden;
+}
+
+.hero__orb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  margin: -300px 0 0 -300px;
+  border-radius: 50%;
+  background: var(--gradient-accent);
+  opacity: 0.2;
+  filter: blur(120px);
+  pointer-events: none;
 }
 
 .hero__content {
-    max-width: 34rem;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 56ch;
+  margin: 0 auto;
 }
 
 .hero__eyebrow {
-    color: #38bdf8;
-    font-weight: 600;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+  margin-bottom: 1.5rem;
+  animation: fade-up 0.6s ease-out 0.2s both;
 }
 
 .hero__title {
-    font-size: clamp(2.4rem, 3.5vw + 1.5rem, 3.6rem);
-    font-weight: 800;
-    margin-bottom: 0.75rem;
-}
-
-.hero__title span {
-    background: linear-gradient(120deg, #38bdf8, #a855f7);
-    -webkit-background-clip: text;
-    color: transparent;
+  font-size: clamp(3rem, 8vw, 5rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+  margin-bottom: 1.5rem;
+  animation: fade-up 0.8s ease-out 0.3s both;
 }
 
 .hero__subtitle {
-    color: #9ca3af;
-    font-size: 1rem;
-    margin-bottom: 1.75rem;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: var(--muted-foreground);
+  max-width: 42ch;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+  animation: fade-up 0.6s ease-out 0.5s both;
 }
 
 .hero__actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  animation: fade-in 0.6s ease-out 0.8s both;
+}
+
+.hero__scroll {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  margin-left: -10px;
+  color: var(--muted-foreground);
+  animation: fade-in 0.6s ease-out 1.2s both, float 6s ease-in-out infinite;
+  animation-delay: 1.2s, 2s;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
 
 .btn {
@@ -196,11 +251,6 @@ img {
     border-color: rgba(128, 163, 184, 0.5);
     color: #e5e7eb;
     background: transparent;
-}
-
-.hero__visual {
-    display: flex;
-    justify-content: flex-end;
 }
 
 /* for skills & about sections */
