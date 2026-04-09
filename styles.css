@@ -687,6 +687,12 @@ img {
   margin-bottom: 1rem;
 }
 
+.project-card__actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
 .project-card__title {
   font-size: clamp(1.5rem, 2.5vw, 1.875rem);
   font-weight: 700;
