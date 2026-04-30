@@ -495,6 +495,8 @@ img {
 .experience-card:nth-child(1) { animation-delay: 0.2s; }
 .experience-card:nth-child(2) { animation-delay: 0.35s; }
 .experience-card:nth-child(3) { animation-delay: 0.5s; }
+.experience-card:nth-child(4) { animation-delay: 0.65s; }
+.experience-card:nth-child(5) { animation-delay: 0.8s; }
 
 @media (min-width: 768px) {
   .experience-card {
