@@ -493,7 +493,7 @@ img {
 
 /* experiences */
 .section#experience .section__title {
-  margin-bottom: 4rem;
+  margin-bottom: 1.25rem;
 }
 
 .experience-list {
@@ -626,14 +626,14 @@ img {
 
 /* for project section */
 .section#projects .section__title {
-  margin-bottom: 4rem;
+  margin-bottom: 1.25rem;
 }
 
 .projects-list {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  padding-block: 0.5rem 3rem;
+  padding-bottom: 3rem;
   overflow-anchor: none;
 }
 
