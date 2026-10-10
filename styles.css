@@ -362,6 +362,11 @@ img {
   line-height: 1.7;
 }
 
+.about__text strong {
+  font-weight: 700;
+  color: var(--foreground);
+}
+
 .about__text p + p {
   margin-top: 1.5rem;
 }
@@ -395,6 +400,15 @@ img {
 .about__card-meta {
   font-size: 0.875rem;
   color: var(--muted-foreground);
+}
+
+.about__card-meta a {
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.about__card-meta a:hover {
+  color: var(--foreground);
 }
 
 /* for skills */
