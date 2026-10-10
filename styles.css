@@ -219,12 +219,19 @@ img {
 
 .hero__scroll {
   position: absolute;
+  z-index: 2;
   bottom: 2.5rem;
   left: 50%;
-  margin-left: -10px;
+  margin-left: -18px;
+  padding: 0.5rem;
   color: var(--muted-foreground);
+  cursor: pointer;
   animation: fade-in 0.6s ease-out 1.2s both, float 6s ease-in-out infinite;
   animation-delay: 1.2s, 2s;
+}
+
+.hero__scroll:hover {
+  color: var(--foreground);
 }
 
 @keyframes fade-up {
@@ -285,6 +292,7 @@ img {
 /* section layout (used by all sections) */
 .section {
   padding: var(--section-padding) var(--section-padding-x);
+  scroll-margin-top: 4.5rem;
 }
 
 .section__inner {
